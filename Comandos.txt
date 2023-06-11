@@ -1,0 +1,34 @@
+-> stack ghci nombreArchivo.hs - para runear el programa
+-> cd 'ubicacion de carpeta' - abrir carpeta
+-> :q - paara salir del ghci
+
+
+import Text.Show.Functions () : mostrar funciones
+
+-> git init crea un nuevo repositorio de Git
+-> git clone "dirección" (sin comillas) : clona un repo remoto a local, solo 1 vez al principio (para crear)
+-> git add "nombre_archivo" : agrega archivo al stage
+-> git commit "texto" (con comillas) : mensaje sobre el commit
+-> git push idParaRepoRemoto : repo local a origin
+-> git pull idParaRepoRemoto : origin a repo local
+-> git status : mustra archivos del stage con diferencias al HEAD
+-> git diff : muestra diferencias entre el stage y el workspace
+-> git log : muestra el historial de commits
+-> git log -p : muestra además los cambios en c/commit
+-> git reset "nombre_archivo"  (sin comillas) : lo opuesto al add, casa archivo del stage
+-> git checkout "commitID" "nombre_archivo" (sin comillas) : para sobreescribir la versión del archivo con la versión correspondiente al commit
+-> git tag "nombre_etiquete" "commitID"  (sin comillas) : nombres v1.n para entregas
+-> git branch -M "branch" (sin comillas) : para cambiar la branch
+-> git config --global user.name "nombre_usuario" : para configurarle mi nombre de usuario en GitHub
+-> git config --global user.email "dir_email" : para configurarle mi email en GitHub
+
+Flujo Habitual:
+1.a. git clone "direccion" : al principio
+1.b. git pull idParaRepoRemoto : demas veces
+2. hacer código
+3. git add "nombre_archivo" : agregar cambios al stage
+4. git status : para verficar si quedó algo afuera del stage
+5. git commit -m "mensaje" : para etiquetar cambios
+6. git push idParaRepoRemoto : llevar cambios al repo remoto
+
+git push origin main por 1era qcy
