@@ -1,0 +1,4 @@
+-lado-> : conoce un atributo (coleccion con '*')
+.lado.> : usa objeto coo argumento
+.lado.|> : implementa interfaz (implements)
+-lado-|> : hereda de clase (extends)
